@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Landslide Risk Predictor</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="wrap"><header><span>AI RISK ASSESSMENT</span><h1>Landslide Risk Predictor</h1>
+<p>Enter the site conditions below to get a prediction from the trained Random Forest.</p></header>
+<section class="card"><form id="riskForm"><div class="grid">
+<label>State<select id="State"></select></label>
+<label>District<select id="District"></select></label>
+<label>Latitude<input id="Latitude" type="number" step="any" required><small>Nearest training coordinate is used for unseen coordinates.</small></label>
+<label>Longitude<input id="Longitude" type="number" step="any" required></label>
+<label>Movement Type<select id="Movement_Type"></select></label>
+<label>Movement History<input id="Movement_History" type="number" step="1" min="0" required></label>
+<label>Annual Rainfall Normal (mm)<select id="Annual_Rainfall_Normal_mm"></select></label>
+<label>Rainfall Pattern<select id="Rainfall_Pattern"></select></label>
+<label>Soil Distribution<select id="Soil_Distribution"></select></label>
+<label>Vegetation<select id="Vegetation"></select></label>
+</div><button>Assess Risk</button></form></section>
+<section id="result" class="card result hidden"><small>PREDICTED RISK</small><div id="riskLevel">—</div>
+<p id="riskText"></p><h3>Model probabilities</h3><div id="probabilities"></div>
+<p class="disclaimer">Machine-learning output only; not an official geological warning or safety determination.</p></section>
+</main><script src="script.js"></script></body></html>

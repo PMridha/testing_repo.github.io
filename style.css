@@ -1,0 +1,10 @@
+*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:#172033;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{width:min(1000px,calc(100% - 32px));margin:50px auto}header{margin-bottom:24px}header span{font-size:12px;font-weight:800;letter-spacing:.1em;color:#315efb}
+h1{font-size:clamp(32px,5vw,48px);margin:7px 0}header p{color:#667085}.card{background:white;border:1px solid #dfe5ee;border-radius:20px;padding:28px;box-shadow:0 12px 35px rgba(20,30,50,.06)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}label{display:flex;flex-direction:column;gap:8px;font-weight:700;font-size:14px}
+input,select{min-height:46px;border:1px solid #dfe5ee;border-radius:10px;padding:0 12px;background:white;font:inherit}small{color:#667085;font-weight:400;line-height:1.35}
+button{margin-top:26px;width:100%;min-height:52px;border:0;border-radius:12px;background:#315efb;color:white;font-weight:800;font-size:16px;cursor:pointer}
+.result{margin-top:22px;text-align:center}.result>small{font-weight:800;letter-spacing:.1em}.result.hidden{display:none}#riskLevel{font-size:52px;font-weight:900;margin:4px}
+#riskText{color:#667085}.prob-row{display:grid;grid-template-columns:85px 1fr 65px;gap:10px;align-items:center;margin:12px 0;text-align:left}
+.bar{height:10px;background:#e9edf4;border-radius:20px;overflow:hidden}.fill{height:100%;background:#315efb;border-radius:20px}.disclaimer{margin-top:24px;color:#667085;font-size:12px}
+@media(max-width:700px){.wrap{margin:25px auto}.card{padding:20px}.grid{grid-template-columns:1fr}}
